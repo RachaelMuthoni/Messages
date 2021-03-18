@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="100dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMessage"
+        android:hint="Enter message here"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPhone"
+        android:layout_below="@+id/edtMessage"
+        android:hint="Enter phone no."
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnChoose"
+        android:layout_below="@+id/edtMessage"
+        android:hint="Choose"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_alignRight="@+id/edtPhone"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCount"
+        android:hint="Count"
+        android:layout_below="@+id/edtPhone"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Send Manually"
+        android:id="@+id/btnManual"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_below="@+id/edtCount"
+        android:layout_marginTop="35dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Send Manually"
+        android:id="@+id/btnSMSs"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_below="@+id/btnManual"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
